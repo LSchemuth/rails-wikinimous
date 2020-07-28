@@ -1,0 +1,13 @@
+<h1>Submission form</h1>
+
+ <%= form_for(article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "Enter an article title" %>
+  <br>
+  <%= f.label :content %>
+  <%= f.text_field :content, placeholder: "Say something" %>
+  <br>
+  <%= f.submit "Submit article" %>
+<% end %>
+
+<%= link_to "Go back to all articles", articles_path %>
